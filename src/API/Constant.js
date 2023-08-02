@@ -1,6 +1,6 @@
 export const API_BASE_URLS = {
   // rishi port
-  baseUrl: 'http://192.168.1.113:7000/v1/',
+  baseUrl: 'http://192.168.1.72:7000/v1/',
   hostname: 'localhost:3000',
 
   // Hartik port

@@ -121,6 +121,21 @@ const Installed = () => {
     window.FB.logout(facebookUserAccessToken);
   };
 
+  const handleHubspot = () => {
+    getWithToken('Hubspot_SignIN', apiTokenData)
+      .then((response) => {
+        console.log('response: ', response);
+        if (response.status == 200) {
+          window.location = `${response.data.url}`;
+        } else if (response.code == 'token_not_valid') {
+          clearLocalStorage();
+        }
+      })
+      .catch((error) => {
+        toast.error('Something went wrong');
+      });
+  };
+
   return (
     <>
       <div className='chatbot-container'>
@@ -182,6 +197,34 @@ const Installed = () => {
                           Connect
                         </button>
                       )}
+                    </div>
+                  </div>
+                  <p className='opensans-regular pt-4 mb-0'>A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.</p>
+                </div>
+              </div>
+            </div>
+            <div className='installed-right ms-5'>
+              <div className='installed-right-text'>
+                <div className='d-flex align-items-center'>
+                  <img src='//static.hsappstatic.net/StyleGuideUI/static-3.333/img/sprocket/apple-touch-icon.png' alt='instagram-icon' style={{ width: '60px' }} />
+                  <h3 className='opensans-bold color-theme-blue mb-0 pb-2'>Hubspot</h3>
+                </div>
+                <div className='mt-4'>
+                  <div className='d-flex flex-wrap'>
+                    <div className='flex-shrink-0 installed-chatbox-logo'>
+                      <img src={CHATBOX_LOGO} alt='chatbox-logo' />
+                    </div>
+
+                    <div className='flex-grow-1 ms-md-3 ms-1 autoresponse-body-text'>
+                      <h5 className='opensans-semibold text-lightSky'>Hartik Rathod</h5>
+                      <h6 className='opensans-regular mb-0 text-notBlack'>058</h6>
+                    </div>
+
+                    <div className='mt-xxl-0 mt-4'>
+                      <button onClick={handleHubspot} className='btn btn-submit-login text-uppercase rounded-3'>
+                        {/* Login with META */}
+                        Connect
+                      </button>
                     </div>
                   </div>
                   <p className='opensans-regular pt-4 mb-0'>A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family.</p>

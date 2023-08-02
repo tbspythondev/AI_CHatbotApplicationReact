@@ -35,6 +35,7 @@ import KnowledgeBaseFAQ from './Pages/KnowledgeBaseFAQ';
 import Layout from './components/Layout';
 import WidgetChatbot from './components/WidgetChatbot';
 import MyLeads from './Pages/MyLeads';
+import Callback from './Pages/Callback';
 
 function App() {
   let token = getLocalStorage('apiToken');
@@ -68,6 +69,7 @@ function App() {
           <Route path='/preview' element={<WidgetChatbot />} />
           <Route path='/testchatbot' element={<TestChatBot />} />
           <Route path='/policy' element={<Policy />} />
+          <Route path='/callback' element={<Callback />} />
 
           <Route path='/threedot' exact element={<ThreeDotLoader />} />
 
