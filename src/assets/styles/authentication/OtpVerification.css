@@ -1,0 +1,62 @@
+.otp-verify-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 83vh;
+}
+.otp-verify-box .otp-verification-text {
+  box-shadow: 0px 1px 3px 1px #00000057;
+  width: 650px;
+  max-width: 95%;
+  text-align: center;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.otp-verification-text h3 {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 31px;
+  color: #000;
+}
+.otp-verification-text p {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #6b868d;
+}
+.otp-verification-text .otp-verification-input input {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  text-align: center;
+  border: 2px solid #00000057;
+}
+.otp-verification-text .otp-verification-input input:focus-visible {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.resend-otp span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 44px;
+  color: #04bcff;
+  cursor: pointer;
+}

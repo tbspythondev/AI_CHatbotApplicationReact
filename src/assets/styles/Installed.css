@@ -1,0 +1,136 @@
+.autoresponse-navheader h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #083541;
+}
+
+.installed-btn {
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 15px;
+  cursor: pointer;
+  max-width: 100%;
+  color: #000000;
+}
+.installed-btn.activeLink {
+  background-color: #04bcff !important;
+  color: #ffffff;
+}
+.installed-btn .installed-icon {
+  height: 100%;
+}
+.installed-btn .installed-icon img {
+  width: 50px;
+}
+
+.installed-right {
+  border: 1px solid #a7a9ac;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 34px;
+  width: 450px;
+  max-width: 95%;
+}
+.installed-right .installed-right-text p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 29px;
+  color: #6b868d;
+  padding-left: 15px;
+  text-align: justify;
+}
+/* .installed-right-text h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 54px;
+  color: #000000;
+  margin-bottom: 0;
+} */
+.installed-right-text .circle-svg svg {
+  color: #1bd741;
+}
+.installed-right-text .facebook-svg svg {
+  color: #1877f2;
+}
+.installed-right-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #6b868d;
+}
+.installed-right-text span {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #1877f2;
+  cursor: pointer;
+}
+
+.installed-chatbox-logo {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 3px black;
+}
+.installed-chatbox-logo img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+}
+.installed-dropdown .dropdown-btn {
+  background-color: #04bcff;
+  height: 45px;
+  width: 150px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.81px;
+  line-height: 39px;
+}
+.installed-link h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.61px;
+  line-height: 35px;
+  text-decoration-line: underline;
+  color: #04bcff;
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .installed-right {
+    padding: 10px 20px;
+  }
+  .installed-btn .installed-icon img {
+    width: 45px;
+  }
+}
+@media (max-width: 992px) {
+  .installed-right {
+    margin: 15px 0 0 0;
+    padding: 10px 20px;
+  }
+  .installed-btn .installed-icon img {
+    width: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .installed-right {
+    margin: 15px 0 0 0;
+    padding: 10px 20px;
+  }
+  .installed-btn .installed-icon img {
+    width: 45px;
+  }
+}

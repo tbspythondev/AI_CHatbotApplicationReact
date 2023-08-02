@@ -1,0 +1,51 @@
+/* :root {
+  --skyblue: #04bcff;
+  --white: #ffffff;
+  --darkblue: #093542;
+  --blackdarkgradient: linear-gradient(90deg, #000000 -3.58%, rgba(246, 248, 251, 0) 8.11%);
+  --blackgraygradient: linear-gradient(90deg, #000000 -3.58%, rgba(246, 248, 251, 0) 5.11%);
+  --gray: #6b868d;
+}
+
+.register-form {
+  width: 445px;
+  margin: auto;
+  max-width: 100%;
+}
+.register-field {
+  width: 90%;
+  margin: auto;
+}
+.btn-submit {
+  background-color: var(--skyblue);
+  border-radius: 25px;
+  box-shadow: none;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+  outline: none;
+  padding: 10px 100px;
+  border: 2px solid var(--skyblue);
+}
+.btn-submit:hover {
+  background-color: var(--white);
+  border-radius: 25px;
+  box-shadow: none;
+  color: var(--skyblue);
+  font-size: 1rem;
+  line-height: 1.5;
+  outline: none;
+  border: 2px solid var(--skyblue);
+}
+
+.register-input-text label {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--darkblue);
+}
+.register-input {
+  height: 55px;
+} */
